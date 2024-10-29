@@ -1,7 +1,10 @@
 <template>
     <div class="layout-base">
+      <div class="ml-24 mt-5">
+        <slot />
+      </div>
       <!-- Main content slot -->
-      <slot />
+      
   
       <!-- Footer with name, date, and page number -->
       <footer class="footer">
