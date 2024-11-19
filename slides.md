@@ -6,6 +6,7 @@ theme: seriph
 background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
 title: IDPA
+author: Ben Brändle | Shahin Amon | Lambotharan Logendran
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
