@@ -1,17 +1,15 @@
 <template>
     <div class="slidev-layout relative h-full w-full">
       <!-- Header -->
-      <header class="absolute top-0 text-xs left-0 right-0 p-2 flex justify-between items-center">
+      <header class="absolute top-0 text-xs left-0 right-0 p-2 -4 flex justify-between items-center">
         <div class="names">{{ $slidev.configs.author || 'Author Name' }}</div>
         <div class="date">{{ new Date().toLocaleDateString() }}</div>
       </header>
   
-      <!-- Main -->
-      <div class="flex-1 overflow-y-auto p-4 h-[calc(100%-2rem)]">
-        <slot name="title"/>
-        <slot/>
+      <div class="mt-4">
+        <slot />
       </div>
-  
+
       <!-- Footer -->
       <footer class="absolute text-xs bottom-0 left-0 right-0 p-2 flex justify-between items-center">
         <div></div>
@@ -25,11 +23,4 @@
   .slidev-layout {
     @apply px-14 py-10;
   }
-
-  .content {
-  @apply flex-1 overflow-y-auto;
-  /* Sicherstellen, dass der Content innerhalb bleibt */
-  max-height: calc(100vh - 4rem); /* Passe den Header- und Footer-Bereich an */
-}
-
   </style>
