@@ -10,10 +10,10 @@
       <div class="content-wrapper mt-4 mb-16">
         <h1 class="text-2xl mb-2"><slot name="title"/></h1>
         <div class="two-columns text-sm">
-          <div class="left-column">
+          <div class="left-column text-">
             <slot name="left"/>
           </div>
-          <div class="right-column">
+          <div class="right-columnn h-[calc(100%-4rem)]">
             <slot name="right"/>
           </div>
         </div>

@@ -1,13 +1,9 @@
 ---
-# You can also start simply with 'default'
 theme: academic
 colorSchema: light
 themeConfig: 
   paginationY: 'b'
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
 background: https://cover.sli.dev
-# some information about your slides (markdown enabled)
 title: KSH-Unterrichtsplaner
 author: Ben Brändle | Shahin Amon | Lambotharan Logendran
 info: |
@@ -15,16 +11,11 @@ info: |
   Presentation slides for developers.
 
   Learn more at [Sli.dev](https://sli.dev)
-# apply unocss classes to the current slide
 class: text-center
-# https://sli.dev/features/drawing
 drawings:
   persist: false
-# slide transition: https://sli.dev/guide/animations.html#slide-transitions
 transition: view-transition
-# enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
-# take snapshot for each slide in the overview
 overviewSnapshots: true
 hideInToc: true
 ---
@@ -37,16 +28,25 @@ transition: view-transition
 layout: 'title-content'
 hideInToc: true
 ---
+
 <template v-slot:title>
 
 # Inhaltsverzeichnis
 </template>
 
 <template v-slot:content>
+
+- Einleitung
 <v-clicks>
 
-<toc />
-
+- Aufgabenstellung und Ausgangslage
+- Vorgehen und Planungsinstrumente
+- Konzeption der Applikation
+- Technologieauswahl
+- Umsetzung
+- Testing
+- Demo der Applikation
+- Fazit und Ausblick
 </v-clicks>
 </template>
 
@@ -58,23 +58,22 @@ layout: 'title-content'
 <template v-slot:title>
 
 # Aufgabenstellung
-
 </template>
 
 <template v-slot:content>
 
-<v-clicks depth="2">
+<v-clicks animated="true">
 
-  - Kalender 
-  - Lehrkräfte
-    - Ansicht
-    - Lektionen erfassen und bearbeiten 
-    - Hausaufgaben
-    - Prüfungen
-    - Notizen
-  - Sus
-    - Kalendaransicht 
-  - Importieren 
+- 📅 **Kalender**
+- 👩‍🏫 **Lehrkräfte**
+  - Ansicht
+  - Lektionen erfassen und bearbeiten
+  - Hausaufgaben
+  - Prüfungen
+  - Notizen
+- 🧑‍🎓 **Sus**
+  - Kalenderansicht
+- 📥 **Importieren**
 
 </v-clicks>
 </template>
@@ -93,12 +92,22 @@ layout: 'two-content'
 <template v-slot:left>
 
   ## Projektmanagements-Methode
+  <!--War schon in vorherigen Projekte unsere go-to PM-Methode, Alle Gruppenmitglieder sind mit der Methode vertraut. -->
+  - 🤝 **Vertrautheit**
+  <!--Eignet sich für eine strukturierte Arbeitsweise. Iperka hat uns gezwungen schon von Grund auf eine gut durchdachte Planung zu entwerfen, was bei einer PM-Methode wie SCRUM nicht der Fall gewesen wäre-->
+  - 🗃️ **Strukturiert**
 </template>
 
 <template v-slot:right>
 
   ## Kollaborationssoftware / Groupware
-  
+  <!--Für die Kollaborationssoftware haben wir das Tool Notion verwendet. Grund dafür waren u.A. die vielen Funktionalitäten die es anbietet, so z.B. das automatische Erstellen von Gantt-Diagrammen, perfekt für unser IPERKA. Zudem -->
+  - **Funktionen** Kalender 📅, Erinnerungen ⏰, anpassbare Vorlagen und einfache Oberfläche 🖥️.
+  - 📤📥 **Teamarbeit** Perfekt für parallele Aufgaben, bei denen alle Teammitglieder gleichzeitig informiert sind .
+  - 📅 **Planung & Terminierung** Zuteilung von Aufgaben und Festlegung von Terminen mit Abhängigkeiten 🔗.
+  <!--Ausserdem gab es eine gewisse Transparenz, sowohl für uns, aber auch für sie als betreuer, da Ist- und Soll-Zustand jederzeit einsehbar, Planung immer abrufbar .-->
+  - 👀 **Transparenz**
+
 </template>
 
 ---
@@ -112,7 +121,56 @@ layout: two-content
 </template>
 
 ---
-layout: cover
+layout: dashboard
+---
+
+<template v-slot:title>
+
+# Afbau der Applikation
+</template>
+
+<div class="flex gap-16 items-center justify-center mt-10">
+  <div v-click class="flex flex-col items-center">
+    <div class="text-6xl mb-4 bg-blue-100 p-8 rounded-xl shadow-md">
+      <logos-html-5 />
+    </div>
+    <div class="text-xl opacity-80 font-semibold">View</div>
+    <div class="text-sm opacity-50">Benutzeroberfläche</div>
+  </div>
+  <div v-click class="flex flex-col gap-8">
+    <div class="text-3xl text-gray-400">
+      <carbon-arrow-right />
+    </div>
+    <div class="text-3xl text-gray-400">
+      <carbon-arrow-left />
+    </div>
+  </div>
+  <div v-click class="flex flex-col items-center">
+    <div class="text-6xl mb-4 bg-green-100 p-8 rounded-xl shadow-md">
+      <logos-spring-icon />
+    </div>
+    <div class="text-xl opacity-80 font-semibold">Controller</div>
+    <div class="text-sm opacity-50">Steuerungslogik</div>
+  </div>
+  <div v-click class="flex flex-col gap-8">
+    <div class="text-3xl text-gray-400">
+      <carbon-arrow-right />
+    </div>
+    <div class="text-3xl text-gray-400">
+      <carbon-arrow-left />
+    </div>
+  </div>
+  <div v-click class="flex flex-col items-center">
+    <div class="text-6xl mb-4 bg-red-100 p-8 rounded-xl shadow-md">
+      <logos-mysql />
+    </div>
+    <div class="text-xl opacity-80 font-semibold">Model</div>
+    <div class="text-sm opacity-50">Geschäftslogik & Daten</div>
+  </div>
+</div>
+
+---
+layout: center
 background: '/cover-image.jpg'  # Du kannst hier dein eigenes Hintergrundbild verwenden
 ---
 
@@ -135,14 +193,17 @@ h1 {
 </style>
 
 ---
-layout: center
+layout: title-content
 ---
 
-<template v-slot:default>
+<template v-slot:title>
 
 # Tech Stack
+</template>
 
-<div class="flex gap-12 items-center justify-center mt-8">
+<template v-slot:content>
+
+<div class="flex gap-12 items-center justify-center mt-28">
   <div v-click class="flex flex-col items-center">
     <div class="text-6xl mb-4">
       <logos-nextjs-icon />
@@ -175,28 +236,48 @@ layout: two-content
 ---
 
 <template v-slot:title>
-
 # Technologieauswahl
 </template>
 
 <template v-slot:left>
 
 ```mermaid {scale: 0.7}
-mindmap
-  root((Backend))
-    Next.js
-      Full-Stack
-      Serverless
-      API Routes
-    Flask
-      Leichtgewichtig
-      Python-Basis
-    Express
-      Node.js
-      Flexibel
-    Django
-      Umfangreich
-      Komplex
+%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '16px'}}}%%
+classDiagram
+    class Technologievergleich {
+        Next.js
+        Flask
+        Express
+        Django
+    }
+    class Next.js {
+        + Full-Stack Fähig
+        + API Routes
+        + JavaScript/TypeScript
+        + Serverless Support
+        - Steile Lernkurve
+    }
+    class Flask {
+        + Leichtgewichtig
+        + Einfach zu lernen
+        + Flexible Struktur
+        - Keine Frontend Tools
+        - Zusätzliche Setup
+    }
+    class Express {
+        + Große Community
+        + Node.js Basis
+        + Flexible Struktur
+        - Frontend separat
+        - Mehr Boilerplate
+    }
+    class Django {
+        + All-in-One Lösung
+        + Admin Interface
+        + Viele Features
+        - Komplex
+        - Python-basiert
+    }
 ```
 
 </template>
@@ -338,57 +419,44 @@ export default async function handler(req, res) {
 </template>
 
 ---
-layout: diagram-side
+layout: two-content
 ---
 
 <template v-slot:title>
+
 # Authentifizierung
 </template>
 
-<template v-slot:diagram>
-```mermaid {scale: 0.55}
-sequenceDiagram
-    participant B as Benutzer
-    participant A as Auth API
-    participant D as Datenbank
-    
-    B->>A: Login Anfrage
-    A->>D: Prüfe Zugangsdaten
-    D-->>A: Gültig ✓
-    A->>A: Token generieren
-    A-->>B: Token senden (7 Tage)
-    Note over B,A: Token im localStorage
-    B->>A: API Anfrage mit Token
-    A->>A: Token validieren
-    A-->>B: Geschützte Daten
-```
-</template>
 
-<template v-slot:content>
-
-<v-clicks>
+<template v-slot:left>
+<v-click>
 
 # Lehrer
 - 🔐 Passwort erforderlich
 - 👥 Voller Zugriff
 - ⏰ 7-Tage Session
 - 🔒 Bcrypt Verschlüsselung
+</v-click>
+</template>
+
+<template v-slot:right>
+<v-click>
 
 # Schüler
 - 👤 Nur Benutzername
 - 📚 Klassenauswahl
 - 🔒 Eingeschränkter Zugriff
 - ⚡ Vereinfachte Anmeldung
-
-</v-clicks>
-
+</v-click>
 </template>
+
 
 ---
 layout: two-content
 ---
 
 <template v-slot:title>
+
 # Backend Testing
 </template>
 
@@ -449,6 +517,14 @@ layout: two-content
 transition: view-transition
 layout: section
 ---
+<template v-slot>
+
+# Frontend
+</template>
+---
+transition: view-transition
+layout: section
+---
 
 <template v-slot:title>
 
@@ -457,8 +533,9 @@ layout: section
 
 ---
 transition: view-transition
-layout: section
+layout: center
 ---
+
 
 <template v-slot:title>
 

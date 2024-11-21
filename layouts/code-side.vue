@@ -7,12 +7,12 @@
       </header>
   
       <!-- Title -->
-      <div class="mt-12 mb-4">
+      <div class="mt-4 mb-4">
         <slot name="title"/>
       </div>
   
       <!-- Main content with code and diagram side by side -->
-      <div class="grid grid-cols-2 gap-4 h-[calc(100%-8rem)]">
+      <div class="grid grid-cols-2 gap-4 h-[calc(100%-4rem)]">
         <div class="overflow-auto">
           <slot name="code"/>
         </div>

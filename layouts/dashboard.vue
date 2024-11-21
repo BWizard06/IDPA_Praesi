@@ -12,7 +12,7 @@
       </div>
   
       <!-- Dashboard content -->
-      <div class="h-[calc(100%-12rem)] flex flex-col justify-center">
+      <div class="flex flex-col text-center justify-center">
         <slot/>
       </div>
   
