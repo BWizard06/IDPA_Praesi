@@ -22,6 +22,7 @@ hideInToc: true
 # KSH-Unterrichtsplanung
 ## Interdisziplinäre Projektarbeit
 
+<!--Ben-->
 ---
 transition: view-transition
 layout: 'title-content'
@@ -30,28 +31,29 @@ hideInToc: true
 
 <template v-slot:title>
 
+
 # Inhaltsverzeichnis
 </template>
 
 <template v-slot:content>
 
-- Einleitung
 <v-clicks animated="true">
 
-- Aufgabenstellung und Ausgangslage
-- Vorgehen und Planungsinstrumente
-- Konzeption der Applikation
+- Aufgabenstellung
+- Planungsinstrumente und Zeitplanung
+- Aufbau und Konzeption der Applikation
 - Technologieauswahl
 - Umsetzung
 - Testing
 - Demo der Applikation
-- Fazit und Ausblick
+- Abschied
 </v-clicks>
 </template>
 
+<!-- Shahin -->
 ---
 transition: view-transition
-layout: 'title-content'
+layout: two-content
 ---
 
 <template v-slot:title>
@@ -59,23 +61,45 @@ layout: 'title-content'
 # Aufgabenstellung
 </template>
 
-<template v-slot:content>
+<template v-slot:left>
 
+## Lehrkräfte
 <v-clicks animated="true">
 
-- 📅 **Kalender**
-- 👩‍🏫 **Lehrkräfte**
-  - Ansicht
-  - Lektionen erfassen und bearbeiten
-  - Hausaufgaben
-  - Prüfungen
-  - Notizen
-- 🧑‍🎓 **Sus**
-  - Kalenderansicht
-- 📥 **Importieren**
+- Kalender
+- Lektionen / Termine erfassen und bearbeiten
+- Dateien hochladen
+- Hausaufgaben eintragen
+- Prüfungen erfassen
+- Notizen (privat und öffentlich)
+- Importieren von administrativen Terminen
 
 </v-clicks>
+
 </template>
+
+<template v-slot:right>
+
+## Schüler
+<v-clicks>
+
+- Kalender
+- Hausaufgaben anzeigen lassen
+- Dateien herunterladen
+- Link pro Lektion öffnen
+
+</v-clicks>
+
+</template>
+
+<!-- Lambo -->
+
+---
+tranisition: view-transition
+layout: cover
+---
+
+# Planungsinstrumente und Zeitplanung
 
 
 ---
@@ -88,28 +112,42 @@ layout: two-content
 # Planungsinstrumente
 </template>
 
+
 <template v-slot:left>
 
+<v-click>
+
   ## Projektmanagements-Methode
-  <!--War schon in vorherigen Projekte unsere go-to PM-Methode, Alle Gruppenmitglieder sind mit der Methode vertraut. -->
-  - 🤝 **Vertrautheit**
-  <!--Eignet sich für eine strukturierte Arbeitsweise. Iperka hat uns gezwungen schon von Grund auf eine gut durchdachte Planung zu entwerfen, was bei einer PM-Methode wie SCRUM nicht der Fall gewesen wäre-->
-  - 🗃️ **Strukturiert**
+  - **IPERKA**
+    - 🤝 **Vertrautheit**
+    - 🗃️ **Strukturiert**
+
+</v-click>
 </template>
 
 <template v-slot:right>
 
-  ## Kollaborationssoftware / Groupware
-  <logos-notion-icon class="text-3xl" />
-  <!--Für die Kollaborationssoftware haben wir das Tool Notion verwendet. Grund dafür waren u.A. die vielen Funktionalitäten die es anbietet, so z.B. das automatische Erstellen von Gantt-Diagrammen, perfekt für unser IPERKA. Zudem -->
-  - **Funktionen** Kalender 📅, Erinnerungen ⏰, anpassbare Vorlagen und einfache Oberfläche 🖥️.
-  - 📤📥 **Teamarbeit** Perfekt für parallele Aufgaben, bei denen alle Teammitglieder gleichzeitig informiert sind .
-  - 📅 **Planung & Terminierung** Zuteilung von Aufgaben und Festlegung von Terminen mit Abhängigkeiten 🔗.
-  <!--Ausserdem gab es eine gewisse Transparenz, sowohl für uns, aber auch für sie als betreuer, da Ist- und Soll-Zustand jederzeit einsehbar, Planung immer abrufbar .-->
-  - 👀 **Transparenz**
+<v-click>
 
+  ## Kollaborationssoftware
+  - **Notion**
+    - **Funktionen**
+      - Kalender 📅
+      - Erinnerungen ⏰
+      - Anpassbare Vorlagen
+    - 📤📥 **Teamarbeit**
+    - 📅 **Planung & Terminierung**
+    - 👀 **Transparenz**
+  
+</v-click>
 </template>
 
+
+<!-- Lambo -->
+<!--Für die Kollaborationssoftware haben wir das Tool Notion verwendet. Grund dafür waren u.A. die vielen Funktionalitäten die es anbietet, so z.B. das automatische Erstellen von Gantt-Diagrammen, perfekt für unser IPERKA. Zudem -->
+<!-- Perfekt für parallele Aufgaben, bei denen alle Teammitglieder gleichzeitig informiert sind -->
+<!--  Zuteilung von Aufgaben und Festlegung von Terminen mit Abhängigkeiten-->
+<!--Eignet sich für eine strukturierte Arbeitsweise. Iperka hat uns gezwungen schon von Grund auf eine gut durchdachte Planung zu entwerfen, was bei einer PM-Methode wie SCRUM nicht der Fall gewesen wäre-->
 ---
 transition: view-transition
 layout: two-content
@@ -119,6 +157,30 @@ layout: two-content
 
 # Zeitplanung
 </template>
+
+<template v-slot:left>
+
+![soll](./soll.png)
+</template>
+
+<template v-slot:right>
+
+<v-click>
+
+![ist](./ist.png)
+</v-click>
+</template>
+
+<!-- Lambo
+Ausserdem gab es eine gewisse Transparenz, sowohl für uns, aber auch für sie als betreuer, da Ist- und Soll-Zustand jederzeit einsehbar, Planung immer abrufbar .-->
+
+---
+transition: view-transition
+layout: cover
+---
+
+# Aufbau und Konzeption der Applikation
+
 
 ---
 layout: dashboard
@@ -169,14 +231,17 @@ layout: dashboard
   </div>
 </div>
 
+<!-- Lambo -->
+
 ---
 layout: two-content
 background: 
 image: /public/low-fidelity.png
 ---
+
 <template v-slot:title>
 
-# Frontendskizze
+# Konzeption
 </template>
 
 <template v-slot:left>
@@ -218,14 +283,16 @@ image: /public/low-fidelity.png
   </div>
 </div>
 </template>
+
+<!-- Moi -->
+
 ---
-layout: center
+transition: view-transition
+layout: cover
 ---
 
-<div class="flex text-center">
+# Technologieauswahl
 
-# Technologieauswahl der verschiedenen Komponenten
-</div>
 
 ---
 layout: dashboard
@@ -237,6 +304,7 @@ layout: dashboard
 </template>
 
 <table>
+<tbody>
   <tr>
     <th>Sprache (Framework)</th>
     <th>Vorwissen</th>
@@ -267,6 +335,7 @@ layout: dashboard
     <td>5</td>
     <td>5</td>
   </tr>
+</tbody>
 </table>
 
 <style>
@@ -274,6 +343,8 @@ layout: dashboard
     font-weight: bold;
   }
 </style>
+
+<!-- Lambo -->
 
 ---
 layout: dashboard
@@ -284,9 +355,9 @@ layout: dashboard
 # Frontend
 </template>
 
-
 <table>
-  <tr class="font-bold">
+<tbody>
+<tr class="font-bold">
     <th>Sprache (Framework)</th>
     <th>Vorwissen</th>
     <th>Built-in Features</th>
@@ -316,6 +387,7 @@ layout: dashboard
     <td>4</td>
     <td>4</td>
   </tr>
+</tbody>
 </table>
 
 <style>
@@ -323,6 +395,8 @@ th {
   font-weight: bold
 }
 </style>
+
+<!-- Lambo -->
 
 ---
 layout: two-content
@@ -355,6 +429,8 @@ layout: two-content
 ![next js logo](./nextjs.png)
 </template>
 
+<!-- Lambo -->
+
 ---
 layout: two-content
 ---
@@ -380,14 +456,59 @@ layout: two-content
 </div>
 </template>
 
+<!-- Lambo -->
+
 ---
-layout: dashboard
+layout: two-content
 ---
 
 <template v-slot:title>
 
 # Benutze Libraries
 </template>
+
+<template v-slot:left>
+
+## Frontend
+
+<v-clicks>
+
+- 🌐**Axios**: HTTP-Client für einfache API-Anfragen.  
+  - Unterstützt Promises
+  - Automatisches Parsen von JSON-Daten
+  - Fehlerbehandlung bei API-Requests
+- 📅**FullCalendar**: Interaktiver Kalender mit umfangreichen Funktionen.  
+  - Anzeige von Events und Zeitplänen
+  - Anpassbar für verschiedene Layouts und Designs
+- 🎨**Styling**
+  - TailwindCSS
+  - shadcn/ui
+  - heroicons
+</v-clicks>
+</template>
+
+<template v-slot:right>
+
+## Backend
+<v-clicks>
+
+- 🔒**bcrypt**: Verschlüsselungsbibliothek zur sicheren Speicherung von Passwörtern (Hashing & Salting).
+- 🛠️**Prisma**: ORM (Object-Relational Mapper) für den Zugriff auf die Datenbank.  
+  - Einfaches Erstellen von komplexen Abfragen
+- 🔑**jsonwebtoken (JWT)**: Token-basierte Authentifizierung und Autorisierung.  
+  - Sichere Übertragung von Benutzerinformationen
+  - Verifizierung durch Signatur
+</v-clicks>
+</template>
+
+<!-- Ben -->
+
+---
+layout: cover
+---
+
+# Umsetzung
+
 
 ---
 layout: title-content
@@ -437,167 +558,7 @@ layout: title-content
 </div>
 </template>
 
-
----
-layout: center
-background: '/cover-image.jpg'  # Du kannst hier dein eigenes Hintergrundbild verwenden
----
-
-<h1>Frontend Umsetzung</h1>
-
-<div class="text-xl text-gray-200 mt-4">
-Moderne API-Architektur mit Next.js
-</div>
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
----
-layout: two-content
----
-<template v-slot:title>
-
-# Erste Implementation des UIs
-</template>
-
-<template v-slot:left>
-
-  ![Formular](./millersche-zahl.png)
-  ## Grundlegende Umsetzung
-  - 🖥️ Start mit Grundgerüst
-  <!-- Fokus auf UX-Validierung und erster visueller Eindruck, ohne die Datenverarbeitung und grosse Funktionalitäten zu beachten. -->
-  - Keine ständige Anpassung für Datenverarbeitung 🛑
-  <!-- Das Grundgerüst ermöglicht schnelle Tests ohne ständige Implementierungen. -->
-  - Spaß an sichtbarem Fortschritt 🎉
-  <!-- Es macht mehr Spaß, das Grundgerüst zuerst zu sehen und darauf aufzubauen. -->
-
-  ## Erste Seiten
-  - Landing Page als Referenz für das Design 📄
-  <!-- Einfaches Design aus dem Wireframe übernommen, erste Implementierung der UI-Elemente. -->
-  - Login-Seite als Mischung aus Wireframe & Landing Page 🔑
-  <!-- Login-Seite basiert auf Wireframe und enthält interaktive Formulare. -->
-  - Formularseite für Lektionen 🎓
-  <!-- Anpassung des Designs für eine bessere Benutzererfahrung und intuitive Eingabe. -->
-</template>
-
-<template v-slot:right>
-
-  ## UX-Verbesserungen
-  - Auswahl der Lektionstypen: Verbesserung der Eingabefelder 🎯
-  <!-- Die Eingabefelder wurden umstrukturiert, um intuitiv zu wirken. -->
-  - Gruppierung der Felder für bessere Usability 🧩
-  <!-- Felder für allgemeine Infos zusammengefasst, um den Eingabeprozess zu optimieren. -->
-  - Abstand zwischen Feldern für bessere Wahrnehmung 📏
-  <!-- Unterschiedliche Abstände zwischen den Eingabefeldern sorgen für visuelle Klarheit. -->
-
-  ## Weitere Überlegungen
-  - Millersche Zahl für Eingabefelder 🧠
-  <!-- Einhaltung der Begrenzung von 7±2 Chunks für bessere kognitive Belastung. -->
-  - Markdown für Notizen zur individuellen Anpassung ✍️
-  <!-- Lehrpersonen können das UI anpassen, was das Nutzererlebnis verbessern sollte. -->
-</template>
-
-
----
-layout: two-content
----
-
-<template v-slot:title>
-
-# Implementierung des Kalenders
-</template>
-
-<template v-slot:left>
-
-  ## Entscheidung für FullCalendar
-  - Schnelle Entscheidung ohne komplexe Analyse 🔍
-  <!-- Die Wahl fiel schnell auf FullCalendar ohne lange Entscheidungsprozesse. -->
-  - Vorteile von FullCalendar 🏆
-  <!-- Viele Optionen, gute Dokumentation, MIT-Lizenz und kostenlos in der Basisversion. -->
-  - Vergleich mit anderen Bibliotheken 📊
-  <!-- Andere Kalender wie DHTMLX hatten kostenpflichtige Versionen, FullCalendar nicht. -->
-  - Vollständige Funktionalität in der kostenlosen Version 💸
-  <!--  alle benötigten Funktionen waren in der kostenlosen Stufe verfügbar. -->
-</template>
-
-<template v-slot:right>
-
-  ## Nutzung von FullCalendar
-  - Einfache Anpassung des Kalenders 🛠️
-  <!-- Vollständige Anpassbarkeit für unsere Anforderungen durch zahlreiche Optionen. -->
-  - Viele Plugins & Funktionen 🔌
-  <!-- Plugins erleichtern die Kalender-Integration und Anpassung an unsere Bedürfnisse. -->
-  - Fokus auf Datahandling 📊
-  <!-- Hauptsächlich Arbeit an der Datenverarbeitung und -darstellung. -->
-  - Wechsel zwischen verschiedenen Ansichten 🔄
-  <!-- Einfache Handhabung der Kalenderansicht, basierend auf den Nutzerrollen. -->
-</template>
-
-
----
-layout: two-content
----
-
-<template v-slot:title>
-
-# Überarbeitung des Designs
-</template>
-
-<template v-slot:left>
-
-  ## Designüberarbeitung
-  - Erste Version wirkte veraltet ⏳
-  <!-- Das ursprüngliche Design erinnerte uns an die frühen Tage des Internets. -->
-  - Boxenlayout mit Interaktionen und Chunks nicht modern genug 📦
-  <!-- Das Design war in einer Box, was den modernen Anforderungen nicht gerecht wurde. -->
-  - Entscheidung zur Neugestaltung ✏️
-  <!-- Wir entschieden uns, das Design grundlegend zu überarbeiten. -->
-  - Inspiration von KSH-Website 🌐
-  <!-- Farbliche Gestaltung basierend auf der Website der KSH. -->
-  - Blassere Farben für den Hintergrund 🎨
-  <!-- Der Hintergrund wurde in einem blasseren Blau gewählt, um Texte und Bilder hervorzuheben. -->
-  - Verbesserung der Sichtbarkeit der Eingabefelder 🔲
-  <!-- Eingabefelder wurden stärker hervorgehoben, um bessere Usability zu gewährleisten. -->
-  
-</template>
-
-<template v-slot:right>
-
-</template>
-
-
----
-layout: center
-background: '/cover-image.jpg'  # Du kannst hier dein eigenes Hintergrundbild verwenden
----
-
-# Backend 
-
-<div class="text-xl text-gray-200 mt-4">
-Moderne API-Architektur mit Next.js
-</div>
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
+<!-- Ben -->
 
 ---
 layout: two-content
@@ -651,6 +612,8 @@ graph TD
 
 </template>
 
+<!-- Ben -->
+
 ---
 layout: dashboard
 ---
@@ -694,8 +657,8 @@ export default async function handler(req, res) {
                 data: {
                     teacherId,
                     title,
-                    start_time: start_time,
-                    end_time: end_time,
+                    start_time,
+                    end_time,
                     notes,
                     location,
                     imported
@@ -715,6 +678,7 @@ export default async function handler(req, res) {
 }
 ```
 
+<!-- Ben -->
 
 ---
 layout: two-content
@@ -748,48 +712,86 @@ layout: two-content
 </v-click>
 </template>
 
----
-layout: cover
----
+<!-- Ben -->
 
-# Testing
 ---
 layout: two-content
 ---
 
 <template v-slot:title>
 
-# Frontend Testing
+# Implementierung des Kalenders
 </template>
 
 <template v-slot:left>
 
-## UX-Tests
-<v-clicks animated="true">
-
-  - **🧠 Cognitive Walkthrough als Testmethode**
-    - Durchführung mit Experten
-    - Realistische Nutzungsszenarien
-  - **📋 Testumfang**
-    - Lehrer
-      - Lektion eintragen
-      - Exceldatei einlesen
-      - Lektion bearbeiten
-    - Schüler
-      - Hausaufgabe anzeigen
-      - Lektionen-Link kopieren
-  - **✅ Resultate**
-    - Schüleransicht: wenig Verbesserungspotential
-    - Excelimport: ein Experte hatte Schwierigkeiten
-    
-</v-clicks>
-  
+![calendar](./kalender.png)
 </template>
 
 <template v-slot:right>
 
+## FullCalendar
+  - Gründe
+    - Gratis
+    - Funktionalitäten <!--Anpassbare Funktionalitäten / Optionen, z.B. verschiedene Anischten, Farben für Events / Tage -->
+    - Gute Dokumentation
+    - MIT-Lizenz
+  - Fokus auf Datahandling
+  <!-- Hauptsächlich Arbeit an der Datenverarbeitung und -darstellung. -->
+  
+</template>
+
+<!-- Shahin -->
+
+---
+layout: two-content
+---
+
+<template v-slot:title>
+
+# User Interface
+</template>
+
+<template v-slot:left>
+
+<v-click>
+
+  ## Design
+  - 🌐 Inspiration von KSH-Website
+  <!-- Farbliche Gestaltung basierend auf der Website der KSH. -->
+  - 🎨 Blasser Hintergrund
+  <!-- Der Hintergrund wurde in einem blasseren Blau gewählt, um Texte und Bilder hervorzuheben. -->
+  - ❄️ Kalte Farben
+  <!--Allg. eher kältere Farben, (Blau , Violett, Weiss), damit es nicht mit dem Hintergrundbild -->
+  
+</v-click>
 
 </template>
+
+<template v-slot:right>
+
+<v-click>
+
+  ## UX
+  - Gruppierung der Felder
+  <!-- Felder für allgemeine Infos zusammengefasst, um für bessere Usability Eingabeprozess zu optimieren. -->
+  - 📏 Abstand zwischen Feldern
+  <!-- Unterschiedliche Abstände zwischen den Eingabefeldern sorgen für visuelle Klarheit, bessere Wahrnehmung & bewusst / unbewusste Gruppierung der Felder. -->
+  - Verwendung von bekannten Icons
+
+</v-click>
+</template>
+
+
+<!-- Shahin -->
+
+---
+layout: cover
+image: 
+---
+
+# Testing
+
 
 ---
 layout: two-content
@@ -841,6 +843,67 @@ flowchart TB
 </v-clicks>
 
 </template>
+
+<!-- Ben -->
+
+---
+layout: two-content
+---
+
+<template v-slot:title>
+
+# Frontend Testing
+</template>
+
+<template v-slot:left>
+
+## UX-Tests
+
+<v-clicks>
+
+  - **🧠 Cognitive Walkthrough als Testmethode**
+    - Durchführung mit Experten
+    - Realistische Nutzungsszenarien
+  - **📋 Testumfang**
+    - Lehrer
+      - Lektion eintragen
+      - Exceldatei einlesen
+      - Lektion bearbeiten
+    - Schüler
+      - Hausaufgabe anzeigen
+      - Lektionen-Link kopieren
+  - **✅ Resultate**
+    - Schüleransicht: wenig Verbesserungspotential
+    - Excelimport: ein Experte hatte Schwierigkeiten
+
+</v-clicks>
+</template>
+
+<template v-slot:right>
+
+  <table>
+    <tbody>
+      <tr>
+        <th>Seite</th>
+        <th>Benötigte Zeit (in s)</th>
+        <th>Bemerkungen</th>
+      </tr>
+      <tr>
+        <td>Kalender</td>
+        <td>24</td>
+        <td>Ist direkt runtergescrollt und hat Button für Lektionformular nicht gesehen, mehrmals auf Tag des Startdatums gedrückt, war verwirrt warum Applikation nicht reagiert</td>
+      </tr>
+        <tr>
+        <td>Lektionsformular</td>
+        <td>97</td>
+        <td> - </td>
+      </tr>
+    </tbody>
+  </table>
+</template>
+
+<!-- Shahin -->
+
 ---
 transition: view-transition
 layout: cover
@@ -855,8 +918,6 @@ transition: view-transition
 layout: center
 ---
 
+# Herzlichen Dank für Ihre Aufmerksamkeit
 
-<template v-slot:title>
-
-# Fazit 
-</template>
+<!-- Wir hoffen dass ihnen die Präsentation gefallen hat & dass sie an unserem Produkt gefallen finden -->
