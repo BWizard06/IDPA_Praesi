@@ -7,9 +7,11 @@
     </header>
 
     <!-- Main content with title and body -->
-    <div class="content-wrapper mt-4 mb-16">
-      <p class="text-2xl mb-2"><slot name="title"/></p>
-      <div class="content text-sm"><slot name="content"/></div>
+    <div class="flex flex-col h-[calc(100%-2rem)] mt-4 mb-16">
+      <h1 class="text-2xl mb-2"><slot name="title"/></h1>
+      <div class="content text-sm">
+        <slot name="content"/>
+      </div>
     </div>
 
     <!-- Footer -->
@@ -24,10 +26,6 @@
 <style>
 .slidev-layout {
   @apply px-14 py-10;
-}
-
-.content-wrapper {
-  @apply flex flex-col h-[calc(100%-8rem)];
 }
 
 .content {

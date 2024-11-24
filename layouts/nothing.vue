@@ -10,6 +10,7 @@
         <slot />
       </div>
 
+
       <!-- Footer -->
       <footer class="absolute text-xs bottom-0 left-0 right-0 p-2 flex justify-between items-center">
         <div></div>

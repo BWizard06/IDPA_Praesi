@@ -3,7 +3,6 @@ theme: academic
 colorSchema: light
 themeConfig: 
   paginationY: 'b'
-background: https://cover.sli.dev
 title: KSH-Unterrichtsplaner
 author: Ben Brändle | Shahin Amon | Lambotharan Logendran
 info: |
@@ -611,7 +610,7 @@ layout: two-content
 
 <template v-slot:left>
 
-```mermaid {scale: 0.7}
+```mermaid {scale: 0.5}
 graph TD
     A[Backend] --> B[API Routes]
     B --> C[Entitäten]
@@ -619,10 +618,12 @@ graph TD
     C --> E[Teachers]
     C --> F[Classes]
     C --> G[Appointments]
+    C --> M[Lessons]
     D --> H[CRUD]
     E --> H
     F --> H
     G --> H
+    M --> H
     H --> I[Create]
     H --> J[Read]
     H --> K[Update]
@@ -703,7 +704,6 @@ export default async function handler(req, res) {
 
             return res.status(201).json(newAppointment);
         } catch (error) {
-            console.error("Fehler beim Erstellen des Termins:", error);
             return res
                 .status(500)
                 .json({ message: "Fehler beim Erstellen des Termins" });
@@ -748,7 +748,11 @@ layout: two-content
 </v-click>
 </template>
 
+---
+layout: cover
+---
 
+# Testing
 ---
 layout: two-content
 ---
@@ -799,66 +803,53 @@ layout: two-content
 
 <template v-slot:left>
 
-## Postman Tests
-<v-clicks>
-
-- 🧪 **Automatisierte API Tests**
-  - Vollständige API-Abdeckung
-  - Wiederholbare Tests
-- 📝 **Testfälle**
-  - Authentifizierung
-  - CRUD Operationen
-  - Fehlerfälle
-- 🔄 **Kontinuierliche Tests**
-  - Vor jedem Release
-  - Nach API-Änderungen
-
-</v-clicks>
+```mermaid {scale: 0.55}
+flowchart TB
+    A[API Endpoint] --> B{Postman Test}
+    B -->|Success| C[✅ Test bestanden]
+    B -->|Fail| D[❌ Test fehlgeschlagen]
+    
+    subgraph Testfälle
+    E[Auth Tests]
+    F[CRUD Tests]
+    G[Validierungs Tests]
+    end
+    
+    Testfälle --> B
+```
 
 </template>
 
 <template v-slot:right>
 
-## Beispiel Test Collection
-```json
-{
-  "info": {
-    "name": "IDPA_backend"
-  },
-  "item": [
-    {
-      "name": "Auth Tests",
-      "item": [
-        "Teacher Login",
-        "Student Login",
-        "Invalid Login"
-      ]
-    },
-    {
-      "name": "Class Tests",
-      "item": [
-        "Create Class",
-        "Get Class",
-        "Update Class",
-        "Delete Class"
-      ]
-    }
-  ]
-}
-```
+## Automatisierte API Tests
+<v-clicks animated="true">
+
+- 🛠️ **Postman als Testtool**
+  - Automatisierte Ausführung
+  - API Endpunkt Tests
+  - Request/Response Validierung
+- 📋 **Testumfang**
+  - Authentifizierung
+  - CRUD Operationen
+  - Eingabevalidierung
+  - Fehlerfälle
+- ✅ **Resultate**
+  - Alle Tests erfolgreich
+  - Dokumentierte Testfälle
+  - Wiederholbare Tests
+
+</v-clicks>
 
 </template>
-
-
 ---
 transition: view-transition
-layout: section
+layout: cover
+background: ./low-fidelity.png
 ---
 
-<template v-slot:title>
-
 # Demo
-</template>
+
 
 ---
 transition: view-transition
