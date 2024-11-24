@@ -759,37 +759,36 @@ layout: two-content
 
 <template v-slot:title>
 
-# Testing & Testresultate
+# Frontend Testing
 </template>
 
 <template v-slot:left>
 
-  ## Testkonzept
-  - **Testing-Methode**: Cognitive Walkthroughs 🧠
-  <!-- Um das UX zu bewerten, führten wir Cognitive Walkthroughs mit Experten durch. -->
-  - **Aufgaben**: Realistische Nutzungsszenarien 📝
-  <!-- Aufgaben wie Registrierung, Lektionserstellung, Excelimport und Hausaufgabenanzeige. -->
-  - **Teilnehmer**: Experten (Lehrpersonen & SuS) 👨‍🏫👩‍🏫
-  <!-- Lehrpersonen und Schüler-Vertreter führten die Walkthroughs durch. -->
-  - **Durchführung**: Direkt auf der Website 🌐
-  <!-- Walkthroughs wurden live auf der Website durchgeführt, auf verschiedenen Geräten. -->
+## UX-Tests
+<v-clicks animated="true">
+
+  - **🧠 Cognitive Walkthrough als Testmethode**
+    - Durchführung mit Experten
+    - Realistische Nutzungsszenarien
+  - **📋 Testumfang**
+    - Lehrer
+      - Lektion eintragen
+      - Exceldatei einlesen
+      - Lektion bearbeiten
+    - Schüler
+      - Hausaufgabe anzeigen
+      - Lektionen-Link kopieren
+  - **✅ Resultate**
+    - Schüleransicht: wenig Verbesserungspotential
+    - Excelimport: ein Experte hatte Schwierigkeiten
+    
+</v-clicks>
+  
 </template>
 
 <template v-slot:right>
 
-  ## Testresultate
-  - **Schüleransicht**: Wenig Verbesserungspotential ✅
-  <!-- Der SuS-Experte hatte keine Schwierigkeiten und löste die Aufgaben schnell. -->
-  - **Registrierung**: Kein Problem für alle Experten 🆗
-  <!-- Alle Experten hatten keine Schwierigkeiten bei der Registrierung. -->
-  - **Multiselektion**: Klar verständlich für alle 👌
-  <!-- Jeder wusste sofort, wie die Multiselektion bei der Klasse funktioniert. -->
-  - **Probleme bei der Termin-Erstellung**: 2 von 3 Experten versuchten, auf das Datum zu klicken 📅❌
-  <!-- Einige Experten versuchten, auf das Datum zu klicken, statt den Button zu benutzen. -->
-  - **Verwendung des Browser-Backbuttons**: Ein Experte nutzte den falschen Button 🔙
-  <!-- Einer der Experten verwendete den Browser-Backbutton anstelle des eigenen Navigationsbuttons. -->
-  - **Excelimport**: Ein Experte hatte Schwierigkeiten ⏳
-  <!-- Ein Experte benötigte mehr Zeit, um den Excelimport-Button zu finden. -->
+
 </template>
 
 ---
