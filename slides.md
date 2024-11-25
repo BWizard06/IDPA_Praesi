@@ -501,7 +501,23 @@ layout: two-content
 </v-clicks>
 </template>
 
-<!-- Ben -->
+<!--
+Ben
+Frontend
+- http client: Anfragen an unser Backend
+  - automatisches Parsen von JSON-Daten
+  - Daten zwischen Backend und Frontend austauschen
+- Herzstück der Applikation 
+  - Unterstützt Ansichtswechsel builtin
+  - Liste von Ereignissen hinzufügen welche direkt angezeigt werden
+- Eine Library welche das stylen einfach macht, kein eigenes CSS schreiben
+  - shadcn hat vorprogrammierte Komponente welche man nutzen kann
+
+Backend
+- Eine Bibliothek und Texte zu verschlüsseln, bei uns verwendet um Passwort zu speichern
+- Einfaches Abfragen von der Datenbank. Man kann die Datenbank entitäten in Objete umwandeln um einfacher zu programmieren
+- JWT, Token um User zu authentifizieren
+-->
 
 ---
 layout: cover
@@ -558,7 +574,11 @@ layout: title-content
 </div>
 </template>
 
-<!-- Ben -->
+<!--
+Ben
+
+Als Zusammenfassung des ganzen Stacks
+-->
 
 ---
 layout: two-content
@@ -612,7 +632,14 @@ graph TD
 
 </template>
 
-<!-- Ben -->
+<!--
+Ben
+
+- REST: representation state transfer
+- Struktur nach Entitäten wie Lektionen, Termine, Klassen usw.
+- Meisten Entitäten haben CRUD Operationen 
+- Prisma welches die einfache Datenbank Integration ermöglicht
+-->
 
 ---
 layout: dashboard
@@ -712,7 +739,11 @@ layout: two-content
 </v-click>
 </template>
 
-<!-- Ben -->
+<!--
+Ben
+
+-
+-->
 
 ---
 layout: two-content
@@ -844,7 +875,12 @@ flowchart TB
 
 </template>
 
-<!-- Ben -->
+<!--
+Ben
+
+- Testtool um unsere API automatisiert zu testen
+- Festlegen was geschickt wird und was dann erwartet wird
+-->
 
 ---
 layout: two-content
