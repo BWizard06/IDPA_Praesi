@@ -266,7 +266,7 @@ image: /public/low-fidelity.png
     <ul class="mt-4">
       <li>🎨 Zuerst Designs erstellt für grobe UI-Vorstellung</li>
       <li>📱 Low-Fidelity Keyscreens</li>
-      <li>✏️ Mehrere Skizzen pro Key-Screen</li>
+      <li>✏️ Mehrere Skizzen pro Keyscreen</li>
       <li>🏆 Auswahl der Favoriten</li>
     </ul>
   </div>
