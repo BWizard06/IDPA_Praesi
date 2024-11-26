@@ -52,8 +52,7 @@ hideInToc: true
 
 <!-- Shahin; Die Präsentation wird wie folgt ablaufen: Zunächst werde wir Ihnen die Aufgabenstellung wieder vorstellen, 
 Danach gehen wir auf die Planungsinstrumente und die Zeitplanung ein. Im Anschluss erklären wir den Aufbau und die Konzeption der Applikation 
-sowie die Auswahl der Technologien. Es folgt eine Vorstellung der Umsetzung, 
-bevor wir in die Testphase einsteigen. Abschließend werden wir Ihnen eine Demo zeigen und 
+sowie die Auswahl der Technologien. Dann gehen wir konkreter in die Umsetzungsphase & Testing ein. Abschließend werden wir Ihnen eine Demo zeigen und 
 dann die Präsentation mit einem kurzen Abschied beenden.-->
 ---
 transition: view-transition
@@ -739,7 +738,6 @@ layout: two-content
     - Gute Dokumentation
     - MIT-Lizenz
   - Fokus auf Datahandling
-  <!-- Hauptsächlich Arbeit an der Datenverarbeitung und -darstellung. -->
   
 </template>
 
@@ -747,6 +745,7 @@ layout: two-content
 da wäre zum einen der Preis von 0.- Franken, die vielen Funktionalitäten / OPtionen, die outofthebox dabei waren und 
 anpassbar waren, z.B. verschiedene Anischten, Farben für Events / Tage. Zudem bot die Bibliothek eine sehr gute Doku und war mit MIT
 lizenziert worde, was es uns ermöglichte, die Bibliothek ohne grosse Probleme für uns zu verwenden.
+Hauptsächlich Arbeit an der Datenverarbeitung und -darstellung.
 -->
 
 ---
