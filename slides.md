@@ -50,7 +50,11 @@ hideInToc: true
 </v-clicks>
 </template>
 
-<!-- Shahin -->
+<!-- Shahin; Die Präsentation wird wie folgt ablaufen: Zunächst werde wir Ihnen die Aufgabenstellung wieder vorstellen, 
+Danach gehen wir auf die Planungsinstrumente und die Zeitplanung ein. Im Anschluss erklären wir den Aufbau und die Konzeption der Applikation 
+sowie die Auswahl der Technologien. Es folgt eine Vorstellung der Umsetzung, 
+bevor wir in die Testphase einsteigen. Abschließend werden wir Ihnen eine Demo zeigen und 
+dann die Präsentation mit einem kurzen Abschied beenden.-->
 ---
 transition: view-transition
 layout: two-content
@@ -906,7 +910,10 @@ layout: two-content
   </table>
 </template>
 
-<!-- Shahin -->
+<!-- Shahin; Beim Frontend haben wir hauptsächlich das UX getestet. Hierbei haben wir mit mehreren "Experten" das System getestet, wobei wir drauf geachtet haben,
+dass ihre Aufagben ein realistisches NUtzungsszenario wiederspiegelt. Genauer gesagt mussten die Lehrer eine Lketion mit gegbenen
+Informationen eintragen, diese später bearbeiten & das Excelfile einlesen. Der Schüler musste sich die HA anzeigen lassen & den Link
+einer Lektion kopieren. Unsere Tests waren sehr erfreuend, da es insgesamt sehr wenig Verbesserungspotential gab.-->
 
 ---
 transition: view-transition
@@ -914,7 +921,7 @@ layout: cover
 background: ./low-fidelity.png
 ---
 
-# Demo
+# Demo der Applikation
 
 
 ---
