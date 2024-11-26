@@ -50,7 +50,10 @@ hideInToc: true
 </v-clicks>
 </template>
 
-<!-- Shahin -->
+<!-- Shahin; Die Präsentation wird wie folgt ablaufen: Zunächst werde wir Ihnen die Aufgabenstellung wieder vorstellen, 
+Danach gehen wir auf die Planungsinstrumente und die Zeitplanung ein. Im Anschluss erklären wir den Aufbau und die Konzeption der Applikation 
+sowie die Auswahl der Technologien. Dann gehen wir konkreter in die Umsetzungsphase & Testing ein. Abschließend werden wir Ihnen eine Demo zeigen und 
+dann die Präsentation mit einem kurzen Abschied beenden.-->
 ---
 transition: view-transition
 layout: two-content
@@ -261,13 +264,9 @@ image: /public/low-fidelity.png
     <h2>Designansatz</h2>
     <ul class="mt-4">
       <li>🎨 Zuerst Designs erstellt für grobe UI-Vorstellung</li>
-      <!-- Wir haben uns entschieden, nicht direkt mit dem Frontend zu beginnen, sondern Design zu entwickeln. -->
       <li>📱 Low-Fidelity Keyscreens</li>
-      <!-- Erste Skizzen von Hand, um die Grundstruktur zu visualisieren. -->
-      <li>✏️ Mehrere Skizzen pro Key-Screen</li>
-      <!-- Wir wollten uns nicht einschränken und haben mehrere Varianten erstellt. -->
+      <li>✏️ Mehrere Skizzen pro Keyscreen</li>
       <li>🏆 Auswahl der Favoriten</li>
-      <!-- Aus den Skizzen einen Favoriten gewählt, um mit einem Mid-Fidelity Wireframe weiterzuarbeiten. -->
     </ul>
   </div>
 
@@ -276,15 +275,17 @@ image: /public/low-fidelity.png
     <ul class="mt-4">
       <li>🔧 Tool: Moqups</li>
       <li>🔎 Detailiertere Keyscreens</li>
-      <!-- Vorstellung des userflows -->
       <li>💬 Präsentation & Feedback</li>
-      <!-- Fertigen wireflow unseren Betreuungslehrpersonen gezeigt, um wertvolles Feedback zu erhalten. -->
     </ul>
   </div>
 </div>
 </template>
 
-<!-- Moi -->
+<!-- Moi; Wir haben uns entschieden, nicht direkt mit dem Frontend zu beginnen, sondern Design zu entwickeln. Erste Skizzen von Hand, um die Grundstruktur 
+zu visualisieren. Da Wir uns nicht gross einschränken wollten, haben wir mehrere Varianten pro Keyscreen erstellt und dann unsere Favoriten ausgewählt.
+Danach haben wir mit Moqups die Keyscreens überarbeitet und ein Wireflow erstellt, um eine Vorstellung des Userflows zu erhalten. DIeses haben wir dann Ihnen 
+präsentiert & dadurch wertvolles Feedback erhalten
+-->
 
 ---
 transition: view-transition
@@ -733,15 +734,19 @@ layout: two-content
 ## FullCalendar
   - Gründe
     - Gratis
-    - Funktionalitäten <!--Anpassbare Funktionalitäten / Optionen, z.B. verschiedene Anischten, Farben für Events / Tage -->
+    - Funktionalitäten
     - Gute Dokumentation
     - MIT-Lizenz
   - Fokus auf Datahandling
-  <!-- Hauptsächlich Arbeit an der Datenverarbeitung und -darstellung. -->
   
 </template>
 
-<!-- Shahin -->
+<!-- Shahin; Unser Herzstück ist der Kalender, welcher mithilfe der Bibliothek FullCalendar erstellt wurde. FullCalendar hat diverse Vorteile,
+da wäre zum einen der Preis von 0.- Franken, die vielen Funktionalitäten / OPtionen, die outofthebox dabei waren und 
+anpassbar waren, z.B. verschiedene Anischten, Farben für Events / Tage. Zudem bot die Bibliothek eine sehr gute Doku und war mit MIT
+lizenziert worde, was es uns ermöglichte, die Bibliothek ohne grosse Probleme für uns zu verwenden.
+Hauptsächlich Arbeit an der Datenverarbeitung und -darstellung.
+-->
 
 ---
 layout: two-content
@@ -758,11 +763,8 @@ layout: two-content
 
   ## Design
   - 🌐 Inspiration von KSH-Website
-  <!-- Farbliche Gestaltung basierend auf der Website der KSH. -->
   - 🎨 Blasser Hintergrund
-  <!-- Der Hintergrund wurde in einem blasseren Blau gewählt, um Texte und Bilder hervorzuheben. -->
   - ❄️ Kalte Farben
-  <!--Allg. eher kältere Farben, (Blau , Violett, Weiss), damit es nicht mit dem Hintergrundbild -->
   
 </v-click>
 
@@ -774,16 +776,21 @@ layout: two-content
 
   ## UX
   - Gruppierung der Felder
-  <!-- Felder für allgemeine Infos zusammengefasst, um für bessere Usability Eingabeprozess zu optimieren. -->
   - 📏 Abstand zwischen Feldern
-  <!-- Unterschiedliche Abstände zwischen den Eingabefeldern sorgen für visuelle Klarheit, bessere Wahrnehmung & bewusst / unbewusste Gruppierung der Felder. -->
   - Verwendung von bekannten Icons
 
 </v-click>
 </template>
 
 
-<!-- Shahin -->
+<!-- Shahin; Beim Design haben wir uns sehr stark an die Farbliche GEstaltung der KSH-Website orientiert, um genauer zu sein haben wir einen sehr 
+blassen blauen Hintergrund verwendet. Das hatte auch zusätzlich den Vorteil, dass der eigentliche Inhalt besser hervorgehoben wird. Allg. eher kältere Farben, 
+(Blau , Violett, Weiss),  damit das Design nicht mit dem Hintergrundbild zusammenprallt. Felder für allgemeine Infos zusammengefasst, 
+um für bessere Usability Eingabeprozess zu optimieren. 
+Auch fürs UX haben wir uns einige Gedanken gemacht; Felder miteinander gruppiert; Unterschiedliche Abstände zwischen den Eingabefeldern sorgen für visuelle Klarheit, 
+bessere Wahrnehmung & bewusst / unbewusste Gruppierung der Felder. Für Aktionen haben wir auch Icons verwendet, welche eigentlich jedem bekannt sein sollte, so z.B. 
+eine Mülltonne fürs löschen oder ein Stift fürs bearbeiten.
+-->
 
 ---
 layout: cover
@@ -902,7 +909,10 @@ layout: two-content
   </table>
 </template>
 
-<!-- Shahin -->
+<!-- Shahin; Beim Frontend haben wir hauptsächlich das UX getestet. Hierbei haben wir mit mehreren "Experten" das System getestet, wobei wir drauf geachtet haben,
+dass ihre Aufagben ein realistisches NUtzungsszenario wiederspiegelt. Genauer gesagt mussten die Lehrer eine Lketion mit gegbenen
+Informationen eintragen, diese später bearbeiten & das Excelfile einlesen. Der Schüler musste sich die HA anzeigen lassen & den Link
+einer Lektion kopieren. Unsere Tests waren sehr erfreuend, da es insgesamt sehr wenig Verbesserungspotential gab.-->
 
 ---
 transition: view-transition
@@ -910,7 +920,7 @@ layout: cover
 background: ./low-fidelity.png
 ---
 
-# Demo
+# Demo der Applikation
 
 
 ---
