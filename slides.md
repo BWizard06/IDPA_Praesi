@@ -95,7 +95,16 @@ layout: two-content
 
 </template>
 
-<!-- Lambo -->
+<!--
+Lambo  
+Planungstool, soll alle relevanten Informationen beinhalten 
+
+Tool aus Sicht der Lehrkräfte
+
+SUS: Lektion zu teilen ist anders
+
+Kommen wir nun zu den Planunginstrumenten und zur Zeitplanung
+-->
 
 ---
 tranisition: view-transition
@@ -147,10 +156,19 @@ layout: two-content
 
 
 <!-- Lambo -->
-<!--Für die Kollaborationssoftware haben wir das Tool Notion verwendet. Grund dafür waren u.A. die vielen Funktionalitäten die es anbietet, so z.B. das automatische Erstellen von Gantt-Diagrammen, perfekt für unser IPERKA. Zudem -->
-<!-- Perfekt für parallele Aufgaben, bei denen alle Teammitglieder gleichzeitig informiert sind -->
-<!--  Zuteilung von Aufgaben und Festlegung von Terminen mit Abhängigkeiten-->
-<!--Eignet sich für eine strukturierte Arbeitsweise. Iperka hat uns gezwungen schon von Grund auf eine gut durchdachte Planung zu entwerfen, was bei einer PM-Methode wie SCRUM nicht der Fall gewesen wäre-->
+
+<!--
+Eignet strukturierte Arbeitsweise. 
+zwingt eine gut durchdachte Planung , bei PM-Methode wie SCRUM nicht der Fall 
+
+bietet viele Funktionalitäten an, so z.B. das automatische Erstellen von Gantt-Diagrammen, perfekt für unser IPERKA.
+
+Zudem Perfekt für parallele Aufgaben, bei denen alle Teammitglieder gleichzeitig informiert sind.
+Zuteilung von Aufgaben und Festlegung von Terminen mit Abhängigkeiten
+
+Das führt uns direkt zu unserem nächsten Punkt Zeitplanung
+-->
+
 ---
 transition: view-transition
 layout: two-content
@@ -174,8 +192,15 @@ layout: two-content
 </v-click>
 </template>
 
-<!-- Lambo
-Ausserdem gab es eine gewisse Transparenz, sowohl für uns, aber auch für sie als betreuer, da Ist- und Soll-Zustand jederzeit einsehbar, Planung immer abrufbar .-->
+<!--
+Lambo
+
+Soll- und Ist-Zustand
+
+Ausserdem gab es eine gewisse Transparenz, sowohl für uns, aber auch für sie als betreuer, da Ist- und Soll-Zustand jederzeit einsehbar, Planung immer abrufbar .
+
+Kommen wir als nächstes zum Aufbau und Konzeption der Applikation
+-->
 
 ---
 transition: view-transition
@@ -234,7 +259,17 @@ layout: dashboard
   </div>
 </div>
 
-<!-- Lambo -->
+<!--
+Lambo
+
+MVC-Architektur 
+
+Aufgaben auf 3 Mitglieder aufteilen
+
+sicherstellen, dass alle Am Anfang unabhängig voneinander arbeiten können
+
+Jetzt wird euch Shahin über das die Konzeption genauer erklären
+-->
 
 ---
 layout: two-content
@@ -345,7 +380,15 @@ layout: dashboard
   }
 </style>
 
-<!-- Lambo -->
+<!--
+Lambo
+
+Einheitliche Sprache: JS im Front- und Backend
+
+Lebendige Community und Unterstützung
+
+Leistungsfähige und skalierbare Backend-Lösungen zu erstellen
+-->
 
 ---
 layout: dashboard
@@ -397,7 +440,17 @@ th {
 }
 </style>
 
-<!-- Lambo -->
+<!--
+Lambo
+
+Codeänderungen detektieren, automatisch neuladen
+
+Teamkompetenz bzw. Vorwissen war uns sehr wichtig, nicht ins kalte Wasser geworfen werden
+
+Next.js hat viele Features, die React oder JS fehlen z.B. Automatisches Routing oder Serverseitiges Rendern
+
+Obwohl es bereits kurz erwähnt wurde, kommen wir nun konkret wieso wir uns für Next.js entschieden haben
+-->
 
 ---
 layout: two-content
@@ -430,7 +483,15 @@ layout: two-content
 ![next js logo](./nextjs.png)
 </template>
 
-<!-- Lambo -->
+<!--
+Lambo
+
+Wie schon bereits erwähnt einheitlich...
+
+"Serverless Ready" bedeutet, dass Next.js problemlos in serverlosen Umgebungen genutzt werden kann, um dynamische, statische und API-Funktionen bereitzustellen. Es erleichtert Entwicklern die Erstellung und Skalierung moderner Webanwendungen ohne Serververwaltung.
+
+Fahren wir mit der DB fort.
+-->
 
 ---
 layout: two-content
@@ -457,7 +518,19 @@ layout: two-content
 </div>
 </template>
 
-<!-- Lambo -->
+<!--
+Lambo
+
+PlanetScale eine MYSQL DB
+
+Eingebaute Sicherheitsfeatures 
+
+Mail das Free-Tier entfernt wird sprich, Kosten würden enstehen
+
+MongoDB: gleiche Vorteile und gratis
+
+Ben wird euch nun erzählen welche Libraries wir benutzt haben
+-->
 
 ---
 layout: two-content
