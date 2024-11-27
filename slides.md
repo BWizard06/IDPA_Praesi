@@ -4,7 +4,7 @@ colorSchema: light
 themeConfig: 
   paginationY: 'b'
 title: KSH-Unterrichtsplaner
-author: Ben Brändle | Shahin Amon | Lambotharan Logendran
+author: Ben Brändle | Skibidi | Lambotharan Logendran
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
@@ -50,7 +50,7 @@ hideInToc: true
 </v-clicks>
 </template>
 
-<!-- Shahin; Die Präsentation wird wie folgt ablaufen: Zunächst werde wir Ihnen die Aufgabenstellung wieder vorstellen, 
+<!-- Skibidi; Die Präsentation wird wie folgt ablaufen: Zunächst werde wir Ihnen die Aufgabenstellung wieder vorstellen, 
 Danach gehen wir auf die Planungsinstrumente und die Zeitplanung ein. Im Anschluss erklären wir den Aufbau und die Konzeption der Applikation 
 sowie die Auswahl der Technologien. Dann gehen wir konkreter in die Umsetzungsphase & Testing ein. Abschließend werden wir Ihnen eine Demo zeigen und 
 dann die Präsentation mit einem kurzen Abschied beenden.-->
@@ -268,7 +268,7 @@ Aufgaben auf 3 Mitglieder aufteilen
 
 sicherstellen, dass alle Am Anfang unabhängig voneinander arbeiten können
 
-Jetzt wird euch Shahin über das die Konzeption genauer erklären
+Jetzt wird euch Skibidi über das die Konzeption genauer erklären
 -->
 
 ---
@@ -601,60 +601,6 @@ layout: cover
 
 
 ---
-layout: title-content
----
-
-<template v-slot:title>
-
-# Tech Stack Ablauf
-</template>
-
-<template v-slot:content>
-
-<div class="flex gap-12 items-center justify-center mt-28">
-  <div v-click="1" class="flex flex-col items-center">
-    <div class="text-6xl mb-4">
-      <logos-nextjs-icon />
-    </div>
-    <div class="text-sm opacity-50">Next.js Frontend</div>
-  </div>
-  <div v-click="1" class="text-3xl text-gray-400">
-    <carbon-arrow-right />
-  </div>
-  <div v-click="2" class="flex flex-col items-center">
-    <div class="text-6xl mb-4">
-      <logos-nextjs-icon />
-    </div>
-    <div class="text-sm opacity-50">Next.js Backend</div>
-  </div>
-  <div v-click="2" class="text-3xl text-gray-400">
-    <carbon-arrow-right />
-  </div>
-  <div v-click="3" class="flex flex-col items-center">
-    <div class="text-6xl mb-4">
-      <logos-prisma />
-    </div>
-    <div class="text-sm opacity-50">Prisma</div>
-  </div>
-  <div v-click="3" class="text-3xl text-gray-400">
-    <carbon-arrow-right />
-  </div>
-  <div v-click="4" class="flex flex-col items-center">
-    <div class="text-6xl mb-4">
-      <logos-mongodb-icon />
-    </div>
-    <div class="text-sm opacity-50">MongoDB</div>
-  </div>
-</div>
-</template>
-
-<!--
-Ben
-
-Als Zusammenfassung des ganzen Stacks
--->
-
----
 layout: two-content
 ---
 
@@ -845,7 +791,7 @@ layout: two-content
   
 </template>
 
-<!-- Shahin; Unser Herzstück ist der Kalender, welcher mithilfe der Bibliothek FullCalendar erstellt wurde. FullCalendar hat diverse Vorteile,
+<!-- Skibidi; Unser Herzstück ist der Kalender, welcher mithilfe der Bibliothek FullCalendar erstellt wurde. FullCalendar hat diverse Vorteile,
 da wäre zum einen der Preis von 0.- Franken, die vielen Funktionalitäten / OPtionen, die outofthebox dabei waren und 
 anpassbar waren, z.B. verschiedene Anischten, Farben für Events / Tage. Zudem bot die Bibliothek eine sehr gute Doku und war mit MIT
 lizenziert worde, was es uns ermöglichte, die Bibliothek ohne grosse Probleme für uns zu verwenden.
@@ -887,7 +833,7 @@ layout: two-content
 </template>
 
 
-<!-- Shahin; Beim Design haben wir uns sehr stark an die Farbliche GEstaltung der KSH-Website orientiert, um genauer zu sein haben wir einen sehr 
+<!-- Skibidi; Beim Design haben wir uns sehr stark an die Farbliche GEstaltung der KSH-Website orientiert, um genauer zu sein haben wir einen sehr 
 blassen blauen Hintergrund verwendet. Das hatte auch zusätzlich den Vorteil, dass der eigentliche Inhalt besser hervorgehoben wird. Allg. eher kältere Farben, 
 (Blau , Violett, Weiss),  damit das Design nicht mit dem Hintergrundbild zusammenprallt. Felder für allgemeine Infos zusammengefasst, 
 um für bessere Usability Eingabeprozess zu optimieren. 
@@ -1018,7 +964,7 @@ layout: two-content
   </table>
 </template>
 
-<!-- Shahin; Beim Frontend haben wir hauptsächlich das UX getestet. Hierbei haben wir mit mehreren "Experten" das System getestet, wobei wir drauf geachtet haben,
+<!-- Skibidi; Beim Frontend haben wir hauptsächlich das UX getestet. Hierbei haben wir mit mehreren "Experten" das System getestet, wobei wir drauf geachtet haben,
 dass ihre Aufagben ein realistisches NUtzungsszenario wiederspiegelt. Genauer gesagt mussten die Lehrer eine Lketion mit gegbenen
 Informationen eintragen, diese später bearbeiten & das Excelfile einlesen. Der Schüler musste sich die HA anzeigen lassen & den Link
 einer Lektion kopieren. Unsere Tests waren sehr erfreuend, da es insgesamt sehr wenig Verbesserungspotential gab.-->
